@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Brand - Hikari Ramen</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+body {
+margin: 0;
+font-family: 'Quicksand', sans-serif;
+color: white;
+background: #0f172a;
+}
+
+/* NAV BAR */
+nav {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(15, 23, 42, 0.95);
+padding: 12px;
+text-align: center;
+backdrop-filter: blur(6px);
+border-bottom: 1px solid #1e293b;
+}
+
+nav a {
+text-decoration: none;
+color: #cbd5e1;
+margin: 6px;
+padding: 6px 10px;
+border-radius: 16px;
+font-size: 13px;
+transition: 0.3s;
+display: inline-block;
+}
+
+nav a:hover {
+background: #38bdf8;
+color: #0f172a;
+}
+
+/* HERO SECTION */
+.hero {
+height: 90vh;
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+background: url('logo.jfif') center/cover no-repeat;
+}
+
+.hero::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background: rgba(15, 23, 42, 0.75);
+}
+
+.content {
+position: relative;
+z-index: 2;
+text-align: center;
+max-width: 700px;
+padding: 20px;
+}
+
+.logo {
+width: 180px;
+border-radius: 20px;
+box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+margin-bottom: 15px;
+}
+
+h1 {
+font-size: 36px;
+margin-bottom: 5px;
+}
+
+.subtitle {
+color: #94a3b8;
+}
+
+/* STORY SECTION */
+.section {
+padding: 60px 20px;
+}
+
+.card {
+max-width: 800px;
+margin: auto;
+background: #1e293b;
+padding: 25px;
+border-radius: 16px;
+text-align: left;
+box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.card h2 {
+text-align: center;
+color: #38bdf8;
+margin-bottom: 20px;
+}
+
+.card p {
+line-height: 1.7;
+color: #cbd5e1;
+margin-bottom: 15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About Me</a>
+<a href="contact.html">Contact Info</a>
+<a href="goals.html">My Goals</a>
+<a href="environment.html">My Environment</a>
+<a href="future.html">My Future Me</a>
+<a href="photography.html">Street Photography</a>
+<a href="brand.html">My Brand, My Logo</a>
+<a href="ty.html">Thank you</a>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+
+<div class="content">
+<img src="logo.jfif" class="logo" alt="Hikari Ramen Logo">
+
+<h1>Hikari Ramen</h1>
+<div class="subtitle">Minimalist Japanese-inspired ramen brand</div>
+</div>
+
+</div>
+
+<!-- STORY -->
+<div class="section">
+<div class="card">
+
+<h2>My Brand Story</h2>
+
+<p>
+This logo was created for my ramen shop, Hikari Ramen, inspired by my interest and admiration for Japanese culture. The minimalist design reflects the brand’s simple and clean identity, using a ramen bowl and chopsticks as the main visual elements, along with contrast in the text to highlight the shop’s name and purpose.
+</p>
+
+<p>
+The name “Hikari,” meaning light, represents the idea of a warm and comforting bowl of ramen. My inspiration also comes from slice-of-life anime, where cozy ramen shops are often shown during rainy scenes.
+</p>
+
+<p>
+This logo represents my dream of visiting Japan and someday opening my own minimalist and welcoming ramen shop.
+</p>
+
+</div>
+</div>
+
+</body>
+</html>
