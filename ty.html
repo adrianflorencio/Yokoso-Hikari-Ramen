@@ -7,7 +7,7 @@ href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand&display
 rel="stylesheet">
 <style>
 body {
-background-color:#191970;
+background-color: #191970;
 font-family: 'Quicksand', sans-serif;
 text-align: center;
 margin: 0;
@@ -31,6 +31,14 @@ nav a:hover {
 background-color: #2a3b8f;
 color: #111c44;
 }
+
+/* ✅ ADDED FOR CENTERING */
+.container {
+display: flex;
+justify-content: center;
+margin-top: 50px;
+}
+
 .scrapbook {
 display: flex;
 flex-wrap: wrap;
@@ -40,7 +48,6 @@ margin: 20px;
 .card {
 background-color: #F8FAFC;
 border-radius: 20px;
-
 width: 200px;
 margin: 15px;
 padding: 15px;
@@ -68,8 +75,11 @@ margin-right: 5px;
 }
 </style>
 </head>
+
 <body>
-<h1> Minasan, Otozurete kurete arigatou gozaimasu!</h1>
+
+<h1> Minasan, Otozurete kurete arigatou gozaimasu </h1>
+
 <nav>
 <a href="index.html">Home</a>
 <a href="about.html">About Me</a>
@@ -80,13 +90,18 @@ margin-right: 5px;
 <a href="photography.html">Street Photography</a>
 <a href="ty.html">Thank you</a>
 </nav>
+
 <hr>
 
-<div class="thank you">
-<!-- Thank your Card -->
+<!-- ✅ CENTERED CONTAINER -->
+<div class="container">
+
 <div class="card">
-<h2> Arigatou!</h2>
-<p> Thank you for visiting my personal website.</p>
+<h2> Arigatou</h2>
+<p> Thankyou for visiting my personal website</p>
 </div>
+
+</div>
+
 </body>
 </html>
