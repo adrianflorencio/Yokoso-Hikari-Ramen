@@ -3,65 +3,135 @@
 <head>
 <title>Hikari Ramen - Street Photography</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
 
 <style>
 body {
-background-color: #191970;
-font-family: 'Quicksand', sans-serif;
-text-align: center;
 margin: 0;
+background: #0f172a;
+font-family: 'Quicksand', sans-serif;
+color: white;
+text-align: center;
 }
 
 h1 {
 font-family: 'Pacifico', cursive;
-color: #e6f4ff;
 margin-top: 20px;
+color: #e2e8f0;
 }
 
 h2 {
-color: #b4cbf0;
+color: #94a3b8;
+}
+
+/* NAV */
+nav {
+margin: 20px 0;
 }
 
 nav a {
 text-decoration: none;
-color: #a4d8d8;
-font-weight: bold;
-margin: 10px;
-padding: 8px 12px;
-border-radius: 12px;
-background-color: #111c44;
+color: #cbd5e1;
+margin: 8px;
+padding: 8px 14px;
+border-radius: 20px;
+background: #1e293b;
 transition: 0.3s;
+font-size: 14px;
 }
 
 nav a:hover {
-background-color: #2a3b8f;
-color: #111c44;
+background: #38bdf8;
+color: #0f172a;
 }
 
-.top-photo img {
-width: 350px;
+/* FEATURE PHOTO */
+.feature {
 margin: 20px auto;
-border-radius: 15px;
-box-shadow: 4px 4px 8px rgba(0,0,0,0.3);
+max-width: 650px;
 }
 
-.bottom-photos {
-display: flex;
-justify-content: center;
-flex-wrap: wrap;
+.feature-title {
+font-size: 18px;
+margin-bottom: 10px;
+color: #38bdf8;
+font-weight: 600;
 }
 
-.bottom-photos img {
-width: 220px;
-margin: 10px;
-border-radius: 15px;
-box-shadow: 4px 4px 8px rgba(0,0,0,0.3);
-transition: transform 0.3s;
+.feature img {
+width: 100%;
+border-radius: 18px;
+box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+transition: transform 0.3s ease;
 }
 
-.bottom-photos img:hover {
-transform: scale(1.05);
+.feature img:hover {
+transform: scale(1.02);
+}
+
+/* QUESTIONS */
+.questions {
+max-width: 700px;
+margin: 30px auto;
+text-align: left;
+background: #1e293b;
+padding: 25px;
+border-radius: 16px;
+}
+
+.questions h3 {
+text-align: center;
+color: #38bdf8;
+}
+
+.questions p {
+margin: 12px 0;
+color: #cbd5e1;
+line-height: 1.5;
+}
+
+/* GALLERY */
+.gallery {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+gap: 15px;
+padding: 20px;
+max-width: 900px;
+margin: auto;
+}
+
+.photo-card {
+position: relative;
+overflow: hidden;
+border-radius: 16px;
+}
+
+.photo-card img {
+width: 100%;
+height: 260px;
+object-fit: cover;
+transition: transform 0.4s ease;
+}
+
+.photo-card:hover img {
+transform: scale(1.08);
+}
+
+.overlay {
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+background: rgba(0,0,0,0.6);
+color: white;
+padding: 10px;
+font-size: 14px;
+opacity: 0;
+transition: 0.3s;
+}
+
+.photo-card:hover .overlay {
+opacity: 1;
 }
 </style>
 
@@ -82,20 +152,53 @@ transform: scale(1.05);
 <a href="ty.html">Thank you</a>
 </nav>
 
-<hr>
-
 <h2>Street Photography</h2>
 
-<!-- Top Image -->
-<div class="top-photo">
-<img src= S1.jfif alt="Top Photo">
+<!-- TOP PHOTO -->
+<div class="feature">
+<div class="feature-title">⭐ Daily Life of SMMC Students</div>
+<img src="S2.jfif" alt="Best Photo">
 </div>
 
-<!-- Bottom 3 Images -->
-<div class="bottom-photos">
-<img src= S2.jfif alt="Photo 2">
-<img src= S3.jfif alt="Photo 3">
-<img src= S4.jfif alt="Photo 4">
+<!-- QUESTIONS -->
+<div class="questions">
+<h3>Reflection Questions</h3>
+
+<p><b>1. What story does your photo tell?</b><br>
+It tells the story of SMMC students' daily life.</p>
+
+<p><b>2. Why did you choose this subject?</b><br>
+I chose this subject because as a fellow SMMC student, I can relate to them. Arriving at school before sunrise and going home at sunset.</p>
+
+<p><b>3. What elements make your photo effective?</b><br>
+The lighting because it makes my photo much clearer.</p>
+
+<p><b>4. What challenges did you encounter?</b><br>
+The timing and choosing of subject, and the quality of my cellphone camera.</p>
+
+<p><b>5. How can you improve your shot next time?</b><br>
+By choosing a better angle and improving the quality of my shots.</p>
+
+</div>
+
+<!-- BOTTOM GALLERY -->
+<div class="gallery">
+
+<div class="photo-card">
+<img src="S1.jfif" alt="Kids playing traditional games">
+<div class="overlay">Kids Playing Traditional Games</div>
+</div>
+
+<div class="photo-card">
+<img src="S3.jfif" alt="Early Class">
+<div class="overlay">Early Class</div>
+</div>
+
+<div class="photo-card">
+<img src="S4.jfif" alt="Inside the Campus">
+<div class="overlay">Inside the Campus</div>
+</div>
+
 </div>
 
 </body>
